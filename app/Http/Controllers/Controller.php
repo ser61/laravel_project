@@ -10,5 +10,5 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    //Este es un Comentario hola
+    //Este es un Comentario hola jojo
 }
