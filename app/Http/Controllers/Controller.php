@@ -12,6 +12,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     //Este es un Comentario hola jojo
   public function jojo(){
-    
+
+  }
+  public function hum(){
+
   }
 }
