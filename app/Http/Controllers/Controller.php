@@ -17,8 +17,8 @@ class Controller extends BaseController
   public function hum(){
     //Master
 
-
-
+    $dato = 'Manule';
+    dd($dato);
 
 
 
