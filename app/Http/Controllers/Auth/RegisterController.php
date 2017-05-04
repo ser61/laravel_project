@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Privilegio;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
@@ -45,6 +46,13 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+    public function showRegistrationForm()
+    {
+      $privilegios = Privilegio::_getPrivilegios()->get()->pluck('nombre', 'id');
+      return view('auth.register', compact('privilegios'));
+    }
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
