@@ -15,13 +15,19 @@ class Controller extends BaseController
     $dato = 'hola';
   }
   public function hum(){
-    //Master
+    //Master - 18
 
     $dato = 'Manule';
     dd($dato);
 
 
 
-    //Fin Master
+    //Fin Master - 25
+    //sergioW - 26
+    $dato = 'javier';
+
+
+
+    //Fin sergioW - 31
   }
 }
